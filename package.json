@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Platform anti-ghosting HRD untuk budak korporat. Spill posisi resign dan cari info loker orang dalam.",
-  "author": "MauResign Team",
+  "author": "snowfluke",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
