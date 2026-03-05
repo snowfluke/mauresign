@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { LogOut } from "lucide-react";
+import { LogOut, Github } from "lucide-react";
 
 export function Navbar() {
   return (
@@ -19,6 +19,9 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
+          <a href="https://github.com/snowfluke/mauresign" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
+            <Github className="w-6 h-6" />
+          </a>
           <button className="hidden sm:block font-bold hover:text-brand transition-colors">
             Masuk
           </button>
