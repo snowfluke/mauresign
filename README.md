@@ -15,6 +15,7 @@ Selamat datang di repositori **MauResign**! Ini adalah kebalikan dari portal low
 
 Proyek ini dibangun menggunakan teknologi modern:
 
+-   **Bun** - Runtime & package manager
 -   **React 19** - Library UI
 -   **Vite 6** - Build tool yang sangat cepat
 -   **Tailwind CSS 4** - Framework styling dengan desain Brutalism
@@ -27,14 +28,14 @@ Landing page ini menggunakan konsep desain **Neo-Brutalism** dengan kontras ting
 
 ## Cara Menjalankan Secara Lokal
 
-1.  Pastikan Node.js sudah terinstal.
+1.  Pastikan [Bun](https://bun.sh) (v1.4.2 atau lebih baru) sudah terinstal.
 2.  Install semua dependency:
     ```bash
-    npm install
+    bun install
     ```
 3.  Jalankan development server:
     ```bash
-    npm run dev
+    bun run dev
     ```
 4.  Buka browser dan akses `http://localhost:3000` (atau port lain yang ditampilkan di terminal).
 
@@ -43,10 +44,16 @@ Landing page ini menggunakan konsep desain **Neo-Brutalism** dengan kontras ting
 Untuk melakukan build aplikasi, jalankan perintah:
 
 ```bash
-npm run build
+bun run build
 ```
 
 Hasil build akan berada di dalam folder `dist`.
+
+## Deployment
+
+Setiap push ke branch `main` otomatis di-build dan di-deploy ke **GitHub Pages** lewat workflow di `.github/workflows/deploy.yml`. Situs live bisa diakses di [snowfluke.github.io/mauresign](https://snowfluke.github.io/mauresign).
+
+Untuk deploy pertama kali, aktifkan GitHub Pages di repo settings dengan source **GitHub Actions**.
 
 ---
 *Dibangun dengan ❤️ untuk kesejahteraan para pencari kerja dan mereka yang butuh healing dari lingkungan toxic.*
